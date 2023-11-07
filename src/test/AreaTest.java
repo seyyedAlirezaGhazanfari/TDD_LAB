@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AreaTest {
     @Test
-    public void getAreaTest() {
+    public void getRectangleAreaTest() {
         double length = 3.2;
         double width = 2.5;
         Rectangle shape = new Rectangle(width, length);
@@ -19,6 +19,14 @@ public class AreaTest {
         shape.setLength(length);
         result = shape.getArea();
         assertEquals(result, length * width);
+    }
+
+    @Test
+    public void getSquareAreaTest() {
+        double length = 3;
+        Square shape = new Square(length);
+        double actual = length * length;
+        assertEquals(actual, shape.getArea());
     }
 
     @Test
