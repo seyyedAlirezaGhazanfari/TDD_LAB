@@ -15,7 +15,7 @@ public class AreaTest {
         assertEquals(result, length * width);
         length = 5.6;
         width = 2;
-        shape.setWdith(width);
+        shape.setWidth(width);
         shape.setLength(length);
         result = shape.getArea();
         assertEquals(result, length * width);
