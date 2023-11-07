@@ -2,27 +2,18 @@ package src.test;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
+import src.Rectangle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AreaTest {
-
-    private Rectangle shape;
-
-    public AreaTest() {
-        this.shape = null;
-    }
-
-    @BeforeAll
-    private void createCalculator() {
-        this.shape = new Rectangle();
-    }
-
     @Test
-    public void computeAreaTest(float length, float width) {
-        this.shape.setWidth(width);
-        this.shape.setLength(length);
-        double result = this.shape.getArea();
+    public void computeAreaTest() {
+        Rectangle shape = new Rectangle();
+        double length = 3.2;
+        double width = 2.5;
+        shape.setWidth(width);
+        shape.setLength(length);
+        double result = shape.getArea();
         assertEquals(result, length * width);
     }
 }
