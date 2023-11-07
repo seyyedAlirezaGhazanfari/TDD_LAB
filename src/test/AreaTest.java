@@ -2,6 +2,7 @@ package src.test;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import src.Calculator;
 import src.Rectangle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
