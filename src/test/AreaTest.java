@@ -28,6 +28,10 @@ public class AreaTest {
         Square shape = new Square(length);
         double actual = length * length;
         assertEquals(actual, shape.getArea());
+        length = 5;
+        shape.setLength(length);
+        actual = length * length;
+        assertEquals(actual, shape.getArea());
     }
 
     @Test
