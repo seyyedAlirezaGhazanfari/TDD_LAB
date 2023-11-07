@@ -1,6 +1,5 @@
 package src.test;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import src.Calculator;
 import src.Rectangle;
@@ -13,6 +12,12 @@ public class AreaTest {
         double width = 2.5;
         Rectangle shape = new Rectangle(width, length);
         double result = shape.getArea();
+        assertEquals(result, length * width);
+        length = 5.6;
+        width = 2;
+        shape.setWdith(width);
+        shape.setLength(length);
+        result = shape.getArea();
         assertEquals(result, length * width);
     }
 
