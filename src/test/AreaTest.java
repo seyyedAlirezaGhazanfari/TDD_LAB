@@ -41,5 +41,10 @@ public class AreaTest {
         double actual = length * width;
         double predict = (new Calculator()).computeArea(length, width);
         assertEquals(predict, actual);
+
+        length = 12;
+        actual = length * length;
+        predict = (new Calculator()).computeArea(length, length);
+        assertEquals(predict, actual);
     }
 }
