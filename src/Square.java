@@ -8,6 +8,10 @@ public class Square {
     }
 
     public double getArea() {
-        return  this.length * this.length;
+        return this.length * this.length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
     }
 }
