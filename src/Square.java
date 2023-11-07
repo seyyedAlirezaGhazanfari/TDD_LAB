@@ -1,6 +1,6 @@
 package src;
 
-public class Square {
+public class Square implements Shape {
     private double length;
 
     public Square(double length) {
