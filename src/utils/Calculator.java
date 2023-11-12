@@ -1,4 +1,8 @@
-package src;
+package src.utils;
+
+import src.Rectangle;
+import src.Shape;
+import src.Square;
 
 public class Calculator {
     public double computeArea(double length, double width) {
